@@ -58,7 +58,7 @@ async function createMemo(value) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      id: new Date(),
+      id: new Date().getTime(),
       content: value,
     }),
   });
